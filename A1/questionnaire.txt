@@ -19,7 +19,7 @@ A: Instagram for sharing photos and memes, Strava for motivating myself to exerc
 
     HTTP - Hypertext Transfer Protocol: Used for transferring of data across the internet
     REST - Representational State Transfer: A style of architecture standard that allows for ease of communication between systems on the web. 
-    API - Application Programming Interface - An interface that receives a query and gives a response, allowing for "communication" between system's.
+    API - Application Programming Interface: An interface that receives a query and gives a response, allowing for "communication" between system's.
 
 6. Do you play a musical instrument or sing? If so, how much experience do you have?
 A: Guitar and Piano, although I have not practiced the Piano in a couple years. I would say my guitar skills are decent.
