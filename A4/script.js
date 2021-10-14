@@ -3,9 +3,9 @@ let blues = [{
         "Filename": "Blues",
         "Compression Algorithm": "MP3",
         "Bit-Rate": "96kbps",
-        "Original Size": 782,
-        "Compressed SIze": 112,
-        "Compression Ratio": 0.143222506393862,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 112,
+        "Compression Ratio": 0.14,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/mp3/blues_mp3_96kbps.mp3",
         "Residual Audio": "resources/blues/mp3/blues_mp3_96kbps_residual.wav"
@@ -14,42 +14,42 @@ let blues = [{
         "Filename": "Blues",
         "Compression Algorithm": "MP3",
         "Bit-Rate": "128kbps",
-        "Original Size": 782,
-        "Compressed SIze": 140,
-        "Compression Ratio": 0.179028132992327,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 140,
+        "Compression Ratio": 0.18,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/mp3/blues_mp3_128kbps.mp3",
-        "Residual Audio": "resources/blues/mp3/blues_mp3_96kbps_residual.wav"
+        "Residual Audio": "resources/blues/mp3/blues_mp3_128kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "MP3",
         "Bit-Rate": "192kbps",
-        "Original Size": 782,
-        "Compressed SIze": 210,
-        "Compression Ratio": 0.268542199488491,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 210,
+        "Compression Ratio": 0.27,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/mp3/blues_mp3_192kbps.mp3",
-        "Residual Audio": "resources/blues/mp3/blues_mp3_96kbps_residual.wav"
+        "Residual Audio": "resources/blues/mp3/blues_mp3_192kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "MP3",
         "Bit-Rate": "320kbps",
-        "Original Size": 782,
-        "Compressed SIze": 318,
-        "Compression Ratio": 0.406649616368286,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 318,
+        "Compression Ratio": 0.41,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/mp3/blues_mp3_320kbps.mp3",
-        "Residual Audio": "resources/blues/mp3/blues_mp3_96kbps_residual.wav"
+        "Residual Audio": "resources/blues/mp3/blues_mp3_320kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "M4A",
         "Bit-Rate": "98kbps",
-        "Original Size": 782,
-        "Compressed SIze": 246,
-        "Compression Ratio": 0.31457800511509,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 246,
+        "Compression Ratio": 0.31,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/m4a/blues_m4a_98kbps.m4a",
         "Residual Audio": "resources/blues/m4a/blues_m4a_98kbps_residual.wav"
@@ -58,86 +58,86 @@ let blues = [{
         "Filename": "Blues",
         "Compression Algorithm": "M4A",
         "Bit-Rate": "128kbps",
-        "Original Size": 782,
-        "Compressed SIze": 247,
-        "Compression Ratio": 0.315856777493606,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 247,
+        "Compression Ratio": 0.32,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/m4a/blues_m4a_128kbps.m4a",
-        "Residual Audio": "resources/blues/m4a/blues_m4a_98kbps_residual.wav"
+        "Residual Audio": "resources/blues/m4a/blues_m4a_128kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "M4A",
         "Bit-Rate": "192kbps",
-        "Original Size": 782,
-        "Compressed SIze": 248,
-        "Compression Ratio": 0.317135549872123,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 248,
+        "Compression Ratio": 0.32,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/m4a/blues_m4a_192kbps.m4a",
-        "Residual Audio": "resources/blues/m4a/blues_m4a_98kbps_residual.wav"
+        "Residual Audio": "resources/blues/m4a/blues_m4a_192kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "M4A",
         "Bit-Rate": "320kbps",
-        "Original Size": 782,
-        "Compressed SIze": 248,
-        "Compression Ratio": 0.317135549872123,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 248,
+        "Compression Ratio": 0.32,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/m4a/blues_m4a_320kbps.m4a",
-        "Residual Audio": "resources/blues/m4a/blues_m4a_98kbps_residual.wav"
+        "Residual Audio": "resources/blues/m4a/blues_m4a_320kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "AC3",
         "Bit-Rate": "96kbps",
-        "Original Size": 782,
-        "Compressed SIze": 107,
-        "Compression Ratio": 0.136828644501279,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 107,
+        "Compression Ratio": 0.14,
         "Original Audio": "resources/blues/blues.wav",
-        "Compressed Audio": "resources/blues/ac3/blues_ac3_96kbps.m4a",
+        "Compressed Audio": "resources/blues/ac3/blues_ac3_96kbps.ac3",
         "Residual Audio": "resources/blues/ac3/blues_ac3_96kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "AC3",
         "Bit-Rate": "128kbps",
-        "Original Size": 782,
-        "Compressed SIze": 142,
-        "Compression Ratio": 0.181585677749361,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 142,
+        "Compression Ratio": 0.18,
         "Original Audio": "resources/blues/blues.wav",
-        "Compressed Audio": "resources/blues/ac3/blues_ac3_128kbps.m4a",
-        "Residual Audio": "resources/blues/ac3/blues_ac3_96kbps_residual.wav"
+        "Compressed Audio": "resources/blues/ac3/blues_ac3_128kbps.ac3",
+        "Residual Audio": "resources/blues/ac3/blues_ac3_128kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "AC3",
         "Bit-Rate": "192kbps",
-        "Original Size": 782,
-        "Compressed SIze": 213,
-        "Compression Ratio": 0.272378516624041,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 213,
+        "Compression Ratio": 0.27,
         "Original Audio": "resources/blues/blues.wav",
-        "Compressed Audio": "resources/blues/ac3/blues_ac3_192kbps.m4a",
-        "Residual Audio": "resources/blues/ac3/blues_ac3_96kbps_residual.wav"
+        "Compressed Audio": "resources/blues/ac3/blues_ac3_192kbps.ac3",
+        "Residual Audio": "resources/blues/ac3/blues_ac3_192kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "AC3",
         "Bit-Rate": "320kbps",
-        "Original Size": 782,
-        "Compressed SIze": 355,
-        "Compression Ratio": 0.453964194373402,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 355,
+        "Compression Ratio": 0.45,
         "Original Audio": "resources/blues/blues.wav",
-        "Compressed Audio": "resources/blues/ac3/blues_ac3_320kbps.m4a",
-        "Residual Audio": "resources/blues/ac3/blues_ac3_96kbps_residual.wav"
+        "Compressed Audio": "resources/blues/ac3/blues_ac3_320kbps.ac3",
+        "Residual Audio": "resources/blues/ac3/blues_ac3_320kbps_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "OGG",
         "Bit-Rate": "Low",
-        "Original Size": 782,
-        "Compressed SIze": 69,
-        "Compression Ratio": 0.0882352941176471,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 69,
+        "Compression Ratio": 0.09,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/ogg/blues_ogg_low.ogg",
         "Residual Audio": "resources/blues/ogg/blues_ogg_low_residual.wav"
@@ -146,34 +146,212 @@ let blues = [{
         "Filename": "Blues",
         "Compression Algorithm": "OGG",
         "Bit-Rate": "Low-Mid",
-        "Original Size": 782,
-        "Compressed SIze": 79,
-        "Compression Ratio": 0.101023017902813,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 79,
+        "Compression Ratio": 0.10,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/ogg/blues_ogg_midlow.ogg",
-        "Residual Audio": "resources/blues/ogg/blues_ogg_low_residual.wav"
+        "Residual Audio": "resources/blues/ogg/blues_ogg_midlow_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "OGG",
         "Bit-Rate": "High-Mid",
-        "Original Size": 782,
-        "Compressed SIze": 145,
-        "Compression Ratio": 0.18542199488491,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 145,
+        "Compression Ratio": 0.19,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/ogg/blues_ogg_midhigh.ogg",
-        "Residual Audio": "resources/blues/ogg/blues_ogg_low_residual.wav"
+        "Residual Audio": "resources/blues/ogg/blues_ogg_midhigh_residual.wav"
     },
     {
         "Filename": "Blues",
         "Compression Algorithm": "OGG",
         "Bit-Rate": "High",
-        "Original Size": 782,
-        "Compressed SIze": 272,
-        "Compression Ratio": 0.347826086956522,
+        "Original Size (kb)": 782,
+        "Compressed Size (kb)": 272,
+        "Compression Ratio": 0.35,
         "Original Audio": "resources/blues/blues.wav",
         "Compressed Audio": "resources/blues/ogg/blues_ogg_high.ogg",
-        "Residual Audio": "resources/blues/ogg/blues_ogg_low_residual.wav"
+        "Residual Audio": "resources/blues/ogg/blues_ogg_high_residual.wav"
+    }
+]
+
+church = [{
+        "Filename": "Church",
+        "Compression Algorithm": "MP3",
+        "Bit-Rate": "96kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 404,
+        "Compression Ratio": 0.12,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/mp3/church_mp3_96kbps.mp3",
+        "Residual Audio": "resources/church/mp3/church_mp3_96kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "MP3",
+        "Bit-Rate": "128kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 521,
+        "Compression Ratio": 0.16,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/mp3/church_mp3_128kbps.mp3",
+        "Residual Audio": "resources/church/mp3/church_mp3_128kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "MP3",
+        "Bit-Rate": "192kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 907,
+        "Compression Ratio": 0.27,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/mp3/church_mp3_192kbps.mp3",
+        "Residual Audio": "resources/church/mp3/church_mp3_192kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "MP3",
+        "Bit-Rate": "320kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 1300,
+        "Compression Ratio": 0.39,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/mp3/church_mp3_320kbps.mp3",
+        "Residual Audio": "resources/church/mp3/church_mp3_320kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "M4A",
+        "Bit-Rate": "98kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 944,
+        "Compression Ratio": 0.29,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/m4a/church_m4a_98kbps.m4a",
+        "Residual Audio": "resources/church/m4a/church_m4a_98kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "M4A",
+        "Bit-Rate": "128kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 955,
+        "Compression Ratio": 0.29,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/m4a/church_m4a_128kbps.m4a",
+        "Residual Audio": "resources/church/m4a/church_m4a_128kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "M4A",
+        "Bit-Rate": "192kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 967,
+        "Compression Ratio": 0.29,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/m4a/church_m4a_192kbps.m4a",
+        "Residual Audio": "resources/church/m4a/church_m4a_192kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "M4A",
+        "Bit-Rate": "320kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 971,
+        "Compression Ratio": 0.29,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/m4a/church_m4a_320kbps.m4a",
+        "Residual Audio": "resources/church/m4a/church_m4a_320kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "AC3",
+        "Bit-Rate": "96kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 445,
+        "Compression Ratio": 0.13,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ac3/church_ac3_96kbps.ac3",
+        "Residual Audio": "resources/church/ac3/church_ac3_96kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "AC3",
+        "Bit-Rate": "128kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 593,
+        "Compression Ratio": 0.18,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ac3/church_ac3_128kbps.ac3",
+        "Residual Audio": "resources/church/ac3/church_ac3_128kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "AC3",
+        "Bit-Rate": "192kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 889,
+        "Compression Ratio": 0.27,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ac3/church_ac3_192kbps.ac3",
+        "Residual Audio": "resources/church/ac3/church_ac3_192kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "AC3",
+        "Bit-Rate": "320kbps",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 1500,
+        "Compression Ratio": 0.45,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ac3/church_ac3_320kbps.ac3",
+        "Residual Audio": "resources/church/ac3/church_ac3_320kbps_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "OGG",
+        "Bit-Rate": "Low",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 253,
+        "Compression Ratio": 0.08,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ogg/church_ogg_low.ogg",
+        "Residual Audio": "resources/church/ogg/church_ogg_low_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "OGG",
+        "Bit-Rate": "Low-Mid",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 306,
+        "Compression Ratio": 0.09,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ogg/church_ogg_midlow.ogg",
+        "Residual Audio": "resources/church/ogg/church_ogg_midlow_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "OGG",
+        "Bit-Rate": "High-Mid",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 416,
+        "Compression Ratio": 0.13,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ogg/church_ogg_midhigh.ogg",
+        "Residual Audio": "resources/church/ogg/church_ogg_midhigh_residual.wav"
+    },
+    {
+        "Filename": "Church",
+        "Compression Algorithm": "OGG",
+        "Bit-Rate": "High",
+        "Original Size (kb)": 3300,
+        "Compressed Size (kb)": 934,
+        "Compression Ratio": 0.28,
+        "Original Audio": "resources/church/church.wav",
+        "Compressed Audio": "resources/church/ogg/church_ogg_high.ogg",
+        "Residual Audio": "resources/church/ogg/church_ogg_high_residual.wav"
     }
 ]
 
@@ -219,7 +397,7 @@ function create_media_table(json_vals) {
             }
             table.appendChild(tr);
         }
-        document.getElementById("discography_table").appendChild(table);
+        document.getElementById("compression_table").appendChild(table);
     }
 
 }
