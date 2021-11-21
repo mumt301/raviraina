@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    margin: auto;
+    width: 80%;
+  }
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+h4 {
+  color:white
+}
+
+.logo-image {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;    
+}
+
+.sect {
+  color: #D7CCC8;
+  text-align: left;
+  font-size: 16px;
+  padding-left: 15px
+  }
+  
+ /* Tabs without JavaScript styling found on StackOverflow  */
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+  text-align: center;
+}
+
+.tabs label{
+	order: 1;
+	display: block;
+	padding: 1rem 2rem;
+	cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  margin-left: 10%;
+}
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #000000;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
