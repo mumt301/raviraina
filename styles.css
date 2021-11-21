@@ -1,0 +1,65 @@
+nav a{
+  text-decoration: none;
+  color:#002e5b; 
+  font-size: 18px; 
+  transition: all 0.5s ease 0s;
+}
+
+#ass{
+  padding-right: 45px;
+  float: right;
+}
+
+#home{
+  padding-left: 45px;
+  float: left
+}
+
+#name{
+  font-size:20px; 
+  color:#002e5b; 
+  font-weight:bold;
+  float:center;
+  margin-left:5%;
+  
+}
+
+header{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  overflow:hidden;
+  background-color:#fde428; 
+}
+
+body{
+  margin:0px; 
+  padding:0px; 
+}
+
+/* Grid styling learned on Geeksforgeeks */
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}  
+
+
+.blue {
+  background-color: #BADFE7;
+}
+
+.green {
+  background-color: #0a5bfe;
+}
+
+.beige {
+  background-color: #388087;
+}
+
+.picture img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block
+}
