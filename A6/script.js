@@ -31,39 +31,28 @@ function getMBID(xhttp) {
     let params = '?inc=release-groups';
     let disco_query = url + artistMBID + params;
 
-    // make new request with newly obtained MBID
+    // make new request with obtained MBID
     httpGet(disco_query, getArtistDisco)
 }
 
 // function to get an artists discography
 function getArtistDisco(xhttp) {
+
+    // get response and extract release group data
     let retrievedData = xhttp.responseXML;
     const artistData = retrievedData.getElementsByTagName("release-group");
-    const ar = [
-        [],
-        []
-    ];
 
-    // fill 2D array with release title in one and date in other
+    // Append album's and dates to table
+    let table_entries = '<tr><th>Album/EP</th><th>Release Date</th></tr>';
     for (var i = 0; i < artistData.length; i++) {
-        ar[0].push(artistData[i].getElementsByTagName("title")[0].innerHTML)
-        ar[1].push(artistData[i].getElementsByTagName("first-release-date")[0].innerHTML)
+        let title = artistData[i].getElementsByTagName("title")[0].innerHTML;
+        let date = artistData[i].getElementsByTagName("first-release-date")[0].innerHTML;
+        table_entries += `<tr><td>${title}</td><td>${date}</td></tr>`;
     }
 
-    // Below code is from stackoverflow, I will change it to simplify the process
-    // map our values so we can add it to a table
+    // select and append to table
     table = document.querySelector('table tbody');
-    var r = ar[0].map(function (col, i) {
-        return ar.map(function (row) {
-            return row[i];
-        });
-    });
-
-    // append our data to the HTML table
-    r.forEach(function (e) {
-        table.innerHTML += '<tr><td>' + e[0] + '</td><td>' + e[1] + '</td></tr>'
-    })
-
+    table.innerHTML = table_entries;
 }
 
 window.onload = queryArtist;

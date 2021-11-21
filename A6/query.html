@@ -9,17 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body style="text-align: center;">
+<body>
     <div>
-        <h2>MusicBrainz Artist Discography</h2>
-        <p>Get a list of an Artist's Discography</p>
+        <div style="text-align: center;">
+            <h2>MusicBrainz Artist Discography</h2>
+            <p>Get a list of an Artist's Discography</p>
 
-        <form id="artist" method="GET">
-            <label for="name">Artist name?</label>
-            <input type="text" name="artist" id="name">
-            <input type="submit" value="Get Discography!">
-        </form>
-
+            <form id="artist" method="GET">
+                <label for="name">Artist name?</label>
+                <input type="text" name="artist" id="name">
+                <input type="submit" value="Get Discography!">
+            </form>
+        </div>
+        <!-- table to append to -->
         <table>
             <tbody></tbody>
         </table>
