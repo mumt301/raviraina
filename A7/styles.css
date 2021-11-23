@@ -24,3 +24,21 @@ select, input {
   margin-bottom: 10px;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+#left {
+  width: 25%;
+}
+
+#right {
+  width: 65%;
+}
+

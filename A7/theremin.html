@@ -16,42 +16,52 @@
 <body>
     <h1 id="centered">An online <span id="thereminLogo">Theremin</span> instrument</h1>
 
-    <!-- TODO: Format these attributes properly -->
-
     <div id="thereminZone"></div>
-    <p id="note1"></p>
-    <p id="note2"></p>
-    <p id="frequency1"></p>
-    <p id="frequency2"></p>
-    <form method="get" id="theform">
-        <fieldset>
-            <legend>Theremin Parameters</legend>
+    <div id="parent">
+        <div id="left">
+            <form id="theform">
+                <fieldset>
+                    <legend>Note Information</legend>
+                    <p id="note1"></p>
+                    <p id="note2"></p>
+                    <p id="frequency1"></p>
+                    <p id="frequency2"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div id="right">
+            <form method="get" id="theform">
+                <fieldset>
+                    <legend>Theremin Parameters</legend>
 
-            <label for="semitones">Interval</label>
-            <select name="semitones" id="semitones">
-                <option value="0">Unison</option>
-                <option value="4">Major Third</option>
-                <option value="3">Minor Third</option>
-                <option value="7">Perfect Fifth</option>
-                <option value="12">Perfect Octave</option>
-            </select>
+                    <label for="semitones">Interval</label>
+                    <select name="semitones" id="semitones">
+                        <option value="0">Unison</option>
+                        <option value="4">Major Third</option>
+                        <option value="3">Minor Third</option>
+                        <option value="7">Perfect Fifth</option>
+                        <option value="12">Perfect Octave</option>
+                    </select>
 
-            <label for="osctype">Oscillator Type</label>
-            <select name="osctype" id="osctype">
-                <option value="sine">Sine</option>
-                <option value="triangle">Triangle</option>
-                <option value="square">Square</option>
-                <option value="sawtooth">Sawtooth</option>
-            </select>
+                    <label for="osctype">Oscillator Type</label>
+                    <select name="osctype" id="osctype">
+                        <option value="sine">Sine</option>
+                        <option value="triangle">Triangle</option>
+                        <option value="square">Square</option>
+                        <option value="sawtooth">Sawtooth</option>
+                    </select>
 
-            <label for="minfreq">Minimum frequency (110-220Hz)</label>
-            <input type="number" id="minfreq" name="minfreq" min="110" max="220" value="220">
-            <label for="maxfreq">Minimum frequency (440-1760Hz)</label>
-            <input type="number" id="maxfreq" name="maxfreq" min="440" max="1760" value="880">
+                    <label for="minfreq">Minimum frequency (110-220Hz)</label>
+                    <input type="number" id="minfreq" name="minfreq" min="110" max="220" value="220">
+                    <label for="maxfreq">Minimum frequency (440-1760Hz)</label>
+                    <input type="number" id="maxfreq" name="maxfreq" min="440" max="1760" value="880">
 
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
 
 
 </body>
