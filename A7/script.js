@@ -40,7 +40,7 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
 
     // set oscillator 1 frequency and information
     oscillator.frequency = thereminFreq;
-    note1.innerHTML = "Oscillator 1 Note: " + noteFromFrequency(thereminFreq) + ' Hz \n';
+    note1.innerHTML = "Oscillator 1 Note: " + noteFromFrequency(thereminFreq) + '\n';
     freq1.innerHTML = "Oscillator 1 Frequency: " + thereminFreq.toFixed(2) + ' Hz \n';
     otoc1.innerHTML = "Oscillator 1 Out of Tune By: " + midiFromFrequency(thereminFreq)[1] + " Hz \n"
     oscillator.volume = thereminVolume;
@@ -51,7 +51,7 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
         let semitoneDifference = urlParams.get('semitones');
         oscillator2.frequency = interval(thereminFreq, semitoneDifference);
         note2.innerHTML = "Oscillator 2 Note: " + noteFromFrequency(oscillator2.frequency) + '\n';
-        freq2.innerHTML = "Oscillator 2 Frequency: " + (oscillator2.frequency).toFixed(2) + '\n';
+        freq2.innerHTML = "Oscillator 2 Frequency: " + (oscillator2.frequency).toFixed(2) + ' Hz \n';
         otoc2.innerHTML = "Oscillator 2 Out of Tune By: " + midiFromFrequency(thereminFreq)[1] + " Hz \n"
         oscillator2.volume = thereminVolume;
 
