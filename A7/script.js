@@ -105,19 +105,35 @@ function runAfterLoadingPage() {
 
     // event listeners
     const theremin = document.getElementById("thereminZone");
+    let playbackType = "slide";
 
-    // theremin.addEventListener("mouseenter", function () {
-    //     thereminOn(oscillator, oscillator2);
-    // });
+    if (urlParams.has('playbacktype')) {
+        playbackType = urlParams.get('playbacktype');
+    }
 
-    theremin.addEventListener("click", function (e) {
-        thereminOn(oscillator, oscillator2);
-        thereminControl(e, oscillator, oscillator2, theremin, urlParams);
-    });
+    if (playbackType == "slide") {
+        theremin.addEventListener("mouseenter", function () {
+            thereminOn(oscillator, oscillator2);
+        });
 
-    theremin.addEventListener("mouseleave", function () {
-        thereminOff(oscillator, oscillator2);
-    });
+        theremin.addEventListener("mousemove", function (e) {
+            thereminControl(e, oscillator, oscillator2, theremin, urlParams);
+        });
+
+        theremin.addEventListener("mouseleave", function () {
+            thereminOff(oscillator, oscillator2);
+        });
+    } else {
+        theremin.addEventListener("click", function (e) {
+            thereminOn(oscillator, oscillator2);
+            thereminControl(e, oscillator, oscillator2, theremin, urlParams);
+        });
+
+        theremin.addEventListener("mouseleave", function () {
+            thereminOff(oscillator, oscillator2);
+        });
+    }
+
 }
 
 window.onload = runAfterLoadingPage;
