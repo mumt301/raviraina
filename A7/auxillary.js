@@ -40,11 +40,11 @@ function midiFromFrequency(frequency) {
             midinumber = midi;
         }
     }
-    return midinumber
+    return [midinumber, minDiff]
 }
 
-function noteFromFrequency(frequency, withOctave=false) {
-    const midinumber = midiFromFrequency(frequency);
+function noteFromFrequency(frequency, withOctave = false) {
+    const midinumber = midiFromFrequency(frequency)[0];
     const pitchclass = midinumber % 12;
     let octave = (midinumber - pitchclass) / 12;
     let notename = notenames[pitchclass];

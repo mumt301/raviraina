@@ -30,6 +30,8 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
     let freq1 = document.getElementById('frequency1')
     let note2 = document.getElementById('note2');
     let freq2 = document.getElementById('frequency2')
+    let otoc1 = document.getElementById('otoc1')
+    let otoc2 = document.getElementById('otoc2')
 
     // calculate new theremin frequency
     let freqRange = maxFrequency - minFrequency;
@@ -38,9 +40,11 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
 
     // set oscillator 1 frequency and information
     oscillator.frequency = thereminFreq;
-    note1.innerHTML = "Oscillator 1 Note: " + noteFromFrequency(thereminFreq) + '\n';
-    freq1.innerHTML = "Oscillator 1 Frequency: " + thereminFreq.toFixed(2) + '\n';
+    note1.innerHTML = "Oscillator 1 Note: " + noteFromFrequency(thereminFreq) + ' Hz \n';
+    freq1.innerHTML = "Oscillator 1 Frequency: " + thereminFreq.toFixed(2) + ' Hz \n';
+    otoc1.innerHTML = "Oscillator 1 Out of Tune By: " + midiFromFrequency(thereminFreq)[1] + " Hz \n"
     oscillator.volume = thereminVolume;
+
 
     // if oscillator 2 present, set frequency and information based on semitone interval
     if (urlParams.has('semitones')) {
@@ -48,6 +52,7 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
         oscillator2.frequency = interval(thereminFreq, semitoneDifference);
         note2.innerHTML = "Oscillator 2 Note: " + noteFromFrequency(oscillator2.frequency) + '\n';
         freq2.innerHTML = "Oscillator 2 Frequency: " + (oscillator2.frequency).toFixed(2) + '\n';
+        otoc2.innerHTML = "Oscillator 2 Out of Tune By: " + midiFromFrequency(thereminFreq)[1] + " Hz \n"
         oscillator2.volume = thereminVolume;
 
     } else {
@@ -101,11 +106,12 @@ function runAfterLoadingPage() {
     // event listeners
     const theremin = document.getElementById("thereminZone");
 
-    theremin.addEventListener("mouseenter", function (e) {
-        thereminOn(oscillator, oscillator2);
-    });
+    // theremin.addEventListener("mouseenter", function () {
+    //     thereminOn(oscillator, oscillator2);
+    // });
 
-    theremin.addEventListener("mousemove", function (e) {
+    theremin.addEventListener("click", function (e) {
+        thereminOn(oscillator, oscillator2);
         thereminControl(e, oscillator, oscillator2, theremin, urlParams);
     });
 
