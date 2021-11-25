@@ -59,9 +59,11 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
 
     oscillator.volume = thereminVolume;
 
+    let semitoneDifference = urlParams.get('semitones');
+    semitoneDifference = -1;
+
     // if oscillator 2 present, set frequency and information based on semitone interval
     if (urlParams.has('semitones')) {
-        let semitoneDifference = urlParams.get('semitones');
 
         if (semitoneDifference != -1) {
             oscillator2.frequency = interval(oscillator.frequency, semitoneDifference);
