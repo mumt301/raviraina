@@ -39,21 +39,51 @@ function thereminControl(e, oscillator, oscillator2, theremin, urlParams) {
     let thereminVolume = 1.0 - (y / theremin.clientHeight);
 
     // set oscillator 1 frequency and information
-    oscillator.frequency = thereminFreq;
-    note1.innerHTML = "Oscillator 1 Note: " + noteFromFrequency(thereminFreq) + '\n';
-    freq1.innerHTML = "Oscillator 1 Frequency: " + thereminFreq.toFixed(2) + ' Hz \n';
-    otoc1.innerHTML = "Oscillator 1 Out of Tune By: " + midiFromFrequency(thereminFreq)[1] + " Hz \n"
-    oscillator.volume = thereminVolume;
+    let noteMode = 'any';
+    if (urlParams.has('notemode')) {
+        noteMode = urlParams.get('notemode');
+    }
 
+    if (noteMode == 'fixed') {
+        console.log(midiFromFrequency(thereminFreq)[0])
+        oscillator.frequency = midiToFrequency(midiFromFrequency(thereminFreq)[0])
+        freq1.innerHTML = "Oscillator 1 Frequency: " + midiToFrequency(midiFromFrequency(oscillator.frequency)[0]).toFixed(2) + ' Hz \n';
+
+    } else {
+        oscillator.frequency = thereminFreq;
+        freq1.innerHTML = "Oscillator 1 Frequency: " + oscillator.frequency.toFixed(2) + ' Hz \n';
+        otoc1.innerHTML = "Oscillator 1 Out of Tune By: " + midiFromFrequency(oscillator.frequency)[1] + " Hz \n"
+    }
+
+    note1.innerHTML = "Oscillator 1 Note: " + noteFromFrequency(oscillator.frequency) + '\n';
+
+    oscillator.volume = thereminVolume;
 
     // if oscillator 2 present, set frequency and information based on semitone interval
     if (urlParams.has('semitones')) {
         let semitoneDifference = urlParams.get('semitones');
-        oscillator2.frequency = interval(thereminFreq, semitoneDifference);
-        note2.innerHTML = "Oscillator 2 Note: " + noteFromFrequency(oscillator2.frequency) + '\n';
-        freq2.innerHTML = "Oscillator 2 Frequency: " + (oscillator2.frequency).toFixed(2) + ' Hz \n';
-        otoc2.innerHTML = "Oscillator 2 Out of Tune By: " + midiFromFrequency(thereminFreq)[1] + " Hz \n"
-        oscillator2.volume = thereminVolume;
+
+        if (semitoneDifference != -1) {
+            oscillator2.frequency = interval(oscillator.frequency, semitoneDifference);
+
+            if (noteMode == 'fixed') {
+                console.log(midiFromFrequency(thereminFreq)[0])
+                oscillator.frequency = midiToFrequency(midiFromFrequency(thereminFreq)[0])
+                freq2.innerHTML = "Oscillator 2 Frequency: " + midiToFrequency(midiFromFrequency(oscillator2.frequency)[0]).toFixed(2) + ' Hz \n';
+
+            } else {
+                oscillator.frequency = thereminFreq;
+                freq2.innerHTML = "Oscillator 2 Frequency: " + (oscillator2.frequency).toFixed(2) + ' Hz \n';
+                otoc2.innerHTML = "Oscillator 2 Out of Tune By: " + midiFromFrequency(oscillator2.frequency)[1] + " Hz \n"
+            }
+
+            note2.innerHTML = "Oscillator 2 Note: " + noteFromFrequency(oscillator2.frequency) + '\n';
+
+            oscillator2.volume = thereminVolume;
+        } else {
+            oscillator2.stop()
+        }
+
 
     } else {
         oscillator2.frequency = 0;

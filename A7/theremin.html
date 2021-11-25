@@ -38,6 +38,7 @@
 
                     <label for="semitones">Interval</label>
                     <select name="semitones" id="semitones">
+                        <option value="-1">Single</option>
                         <option value="0">Unison</option>
                         <option value="4">Major Third</option>
                         <option value="3">Minor Third</option>
@@ -57,6 +58,12 @@
                     <select name="playbacktype" id="playbacktype">
                         <option value="slide">Slide</option>
                         <option value="click">Click</option>
+                    </select>
+
+                    <label for="notemode">Note Selection</label>
+                    <select name="notemode" id="notemode">
+                        <option value="any">Any</option>
+                        <option value="fixed">Fixed Notes</option>
                     </select>
 
                     <label for="minfreq">Minimum frequency (110-220Hz)</label>
