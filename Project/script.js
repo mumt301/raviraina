@@ -53,7 +53,7 @@ function playNote(key, synth, attack, release, distortion) {
 
     if (distortion > 0) {
         var dist = new Pizzicato.Effects.Distortion({
-            gain: distortion
+            gain: parseFloat(distortion)
         });
 
         synth.addEffect(dist);
@@ -157,6 +157,14 @@ function main() {
     releaseelement.onchange = function () {
         releasediv.innerHTML = this.value;
         release = this.value;
+    }
+
+    let distortionelement = document.getElementById('distortion'),
+        distortiondiv = document.getElementById("distortionamount");
+
+    distortionelement.onchange = function () {
+        distortiondiv.innerHTML = this.value;
+        distortion = this.value;
     }
 
     // play note when note is played
