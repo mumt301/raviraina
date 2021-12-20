@@ -1,0 +1,57 @@
+  body {
+    background-color: #143F6B;
+    min-height: 100vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .piano {
+    display: flex;
+  }
+
+  .controls {
+    display: inline-block;
+  }
+
+  .key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+  }
+  
+  .white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+  }
+  
+  .white.active {
+    background-color: #CCC;
+  }
+  
+  .black {
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+  }
+  
+  .black.active {
+    background-color: #333;
+  }
+
+  #parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #left {
+    width: 100%;
+  }
+
+
+  

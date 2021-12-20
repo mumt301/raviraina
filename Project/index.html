@@ -3,8 +3,9 @@
 <!-- Project will use Pizzicatio.js -->
 
 <head>
-    <meta charset="utf-8" />
-    <title>Theremin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.js"></script>
@@ -12,14 +13,60 @@
 </head>
 
 <body>
-    <div id="controls">
-        <!-- TODO: Implement Controls for the synth -->
-    </div>
-    <div id="presets">
-        <!-- TODO: Create presets that auto play songs/basic melodies -->
-    </div>
-    <div id="keyboard">
-        <!-- TODO: Implement a basic keyboard playable with keys or mouse clicks -->
+    <div class="mainbody">
+        <div>
+            <p><b>Web Based Synthesizer!</b></p>
+        </div>
+
+        <div style="text-align: center;">
+            <button id="playback">Playback</button>
+            <button id="record" class="recording">Record</button>
+        </div>
+        <div id="parent">
+            <div id="left">
+                <div class="piano">
+                    <div data-note="C" class="key white"></div>
+                    <div data-note="Db" class="key black"></div>
+                    <div data-note="D" class="key white"></div>
+                    <div data-note="Eb" class="key black"></div>
+                    <div data-note="E" class="key white"></div>
+                    <div data-note="F" class="key white"></div>
+                    <div data-note="Gb" class="key black"></div>
+                    <div data-note="G" class="key white"></div>
+                    <div data-note="Ab" class="key black"></div>
+                    <div data-note="A" class="key white"></div>
+                    <div data-note="Bb" class="key black"></div>
+                    <div data-note="B" class="key white"></div>
+                    <div data-note="C2" class="key white"></div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="controls">
+                    <form method="get" id="theform">
+                        <fieldset>
+                            <legend>Controls</legend>
+                            <input id="slide" type="range" min="-5" max="5" step="1" value="0">
+                            <p>Current Octave: <span id="sliderAmount">0</span></p>
+
+                            <input id="attack" type="range" min="0" max="10" step="1" value="0">
+                            <p>Attack: <span id="attackamount">0</span></p>
+
+                            <input id="release" type="range" min="0" max="10" step="1" value="0">
+                            <p>Release: <span id="releaseamount">0</span></p>
+
+                            <label for="osctype">Oscillator Type</label>
+                            <select name="osctype" id="osctype">
+                                <option value="sine">Sine</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="square">Square</option>
+                                <option value="sawtooth">Sawtooth</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p>Use bottom row of keyboard for white keys, middle row for black!</p>
     </div>
 </body>
 
